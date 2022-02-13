@@ -1,0 +1,682 @@
+
+/*media-queries*/
+
+@font-face {
+    font-family: SurroundingRegular;
+    src: url("fonts/surrounding/SurroundingRegular.otf") ;
+   }
+
+@font-face {
+    font-family: SurroundingBold;
+    src: url("fonts/surrounding/SurroundingBold.otf") ;
+    
+   }
+   
+@media only screen {
+    body{
+        max-width:1000px;
+        max-height: 100000px;
+        margin: auto;
+    }
+}
+@media (max-width : 600px) {
+    header button {
+        display:none;
+    }
+    header .menuHamburger {
+        display: block;
+        position:absolute;
+        right:0;
+        font-size: x-large;
+    }
+
+    header .responsive > a,
+    header .responsive button { 
+        display:block;
+    }
+    .menuList {
+        display: flex;
+        flex-direction:column;
+        position: absolute;
+        border: #B00F0F 1px;
+    }
+    .menuListElementmenuItem {
+        position: absolute;
+        width: 300px;
+        right:150px;
+        top:40px;
+    }
+}
+@media (min-width : 600px) {
+    header .menuHamburger {
+        display: none;
+    }
+}
+* {
+     margin: 0;
+     padding: 0;
+     font-family: SurroundingBold;
+     
+     }
+     .lien {
+        color:white;
+     
+     }
+
+h1:before, h1:after { content:''; display:inline-block; 
+    vertical-align: middle; 
+    width: 5rem; height: 2px; 
+    background: #000 }
+
+h1:before { margin-right: .3rem }
+h1:after { margin-left: .3rem }
+
+
+                            /*Le commentaire au dessus du CSS correspond au nom de la page*/
+
+
+
+
+.body {
+    min-height: 100%;
+}        
+
+h1 {
+    color: #B00F0F;
+    margin-left: 20%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+    text-shadow:rgb(255, 255, 255) 1px 0px 0px, 
+                rgb(255, 255, 255) 0.540302px 0.841471px 0px, 
+                rgb(255, 255, 255) -0.416147px 0.909297px 0px, 
+                rgb(255, 255, 255) -0.989992px 0.14112px 0px, 
+                rgb(255, 255, 255) -0.653644px -0.756802px 0px, 
+                rgb(255, 255, 255) 0.283662px -0.958924px 0px, 
+                rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+
+h2 {
+    color: #B00F0F;
+    margin-left: 10%;               
+    
+}
+.content {
+    position:absolute;
+    bottom: 0;
+}
+.h2accueil {
+    color: #f8f8f8;
+    margin-left: 10%;
+    font-size: x-large;
+    margin-top: 30px;
+}
+a { 
+    text-decoration:none;
+} 
+a:visited { 
+    text-decoration:none;
+} 
+p {
+    font-size: 15pt;
+}
+.error404 {
+    max-height: 800px;
+    width: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+                /*HEADER*/
+
+/*HeaderHaut*/
+.BackgroundImage {
+    margin: auto;
+    background-image:url("images/fond.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-attachment: scroll;
+    background-position: top center;    
+}
+
+.haut {
+    display:flex;
+    justify-content:space-between;
+}
+
+#header {
+    background-image:url("images/fondHeader.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-attachment: scroll;
+    background-position: top center;
+}
+.headerHautGauche{
+    display:flex;
+    flex-direction: row;
+}
+.rappelGr {
+    
+    color: #f8f8f8;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 8px;
+    color: inherit;
+}
+.headerHautDroit{
+    display:flex;
+    flex-direction: row;
+    
+    margin-bottom:5px;
+}
+.languages{
+    width: 22px;
+    height: 22px;
+    background: #B00F0F;
+    border: 2px solid #f8f8f8;
+    border-radius: 12px;  
+    color: #f8f8f8;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+
+/*HeaderBas*/
+
+
+.logo {
+    height: 70px;
+    width:auto; 
+}
+.menuListElements {
+    display:flex;
+    text-align: center;
+    margin-left: 8px;
+    flex-direction: row;
+}
+.HeaderBas {
+    background-color:#f8f8f8;
+    display:flex;
+    justify-content: space-between;
+}
+.menuList {
+    display:flex;
+    font-size: 15px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    position:relative;
+}
+.menuList  a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+.menuListElementButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.menuListElementButton:hover {
+    background-color: #c5c5c5;
+}
+.reducedMenu {
+    width: 60px;
+    height: 60px;
+    background: #B00F0F;
+    border: 2px solid #f8f8f8;
+    border-radius: 40px;
+    color: #f8f8f8;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+.menuListElements {
+    position: relative;
+}
+.menu1 {
+    display:block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkgrey;
+    background-color: #f8f8f8;
+}
+.menuListElementmenuItem {
+    display: none;
+}
+header .menuListElement:hover .menuListElementmenuItem{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border: 1px #B00F0F solid;
+    text-align: left;
+    padding:5px;
+    width: 150px;
+
+}
+header .menuListElementmenuItem a {
+    margin-top:10px;
+    text-decoration: none;
+    color: black;
+}
+header .menuListElementmenuItem a:hover {
+    color:#B00F0F
+}
+
+
+
+                /*Page Accueil*/
+
+                
+/*ACCUEIL/A la une*/
+
+
+ .AccueilaLaUne {
+     max-width:500px;
+     max-width:60%;
+     height: 180px;
+     margin-left: 10px;
+     margin-top: 10px;
+     margin-bottom:10px;
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+ }
+ .AccueilALaUneTexte {
+     display: inline;
+     margin-left: 10px;
+     font-weight: lighter;
+ }
+ .TitreAlaUne {
+    font-size: 50px;
+    color: #f8f8f8;
+    margin-bottom: -0px;
+    margin-top: -10px;
+ }
+ .paragraph {
+    color: #f8f8f8;    
+}
+
+
+/*ACCUEIL/cNos formations*/
+
+
+.nosFormations {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    width: 55%;
+    color:black;
+    font-size:15px;
+}
+.pageAccueilBouton {
+    height: 50px;
+    width:220px;
+    border: solid darkred 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.pageAccueilBouton2 {
+    height: 50px;
+    width:220px;
+    border: solid darkred 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.pageAccueilBoutonTxt {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*ACCUEIL/NOS ELEVES*/
+
+
+.commentairesAccueil {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 80px
+}
+.commentairesAccueilVignette {
+    width: 450px;
+    height:250px;
+    border: solid 1px darkgrey;
+    margin-right: 10px;
+    background: #f8f8f8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.commentairesAccueilVignetteTitreImage {
+    height:70px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.commentairesAccueilVignetteImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+}
+.commentairesAccueilVignetteCommentaire {
+    margin-left: 10px;
+    margin-right: 10px;
+}            
+.commentairesAccueilVignetteTitre {
+    margin: auto auto auto auto;
+}
+.commentairesAccueilVignetteCommentaireSignature {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 10;
+}
+
+
+/*ACCUEIL/inscription*/
+
+
+.accueilInscription {
+    margin-top: 80px;
+}
+.accueilInscriptionImage {
+    background: url("images/Demain-le-Printemps-ecole-theatrale-sovietique-admission-inscription-1.png");   
+    max-width: 100%;
+}
+
+/*ACCUEIL/Médias*/
+.accueilMediasApropos {
+    width: 500px;
+    color: #f8f8f8;
+    margin-top: 30px;
+}
+.medias {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.videos {
+    margin-top: 20px;
+}
+
+
+                /*footer*/
+.backgroundImageFooter {
+    margin: top 100%;
+    background-image:url("images/fond.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-attachment: scroll;
+    background-position: top center;
+    
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left:  20px;
+    margin-right: auto;
+    max-width: 1000px;
+    text-decoration: none;
+    list-style-type:none;
+    bottom:0;
+}
+#list {
+    text-decoration: none;
+    list-style-type:none;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.list {
+    text-decoration: none;
+    list-style-type:none;
+    color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+#flexList {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    color: #f8f8f8;
+}
+.content {
+    max-width: 1000px;
+    margin-top: 0%;
+}
+
+                /*Partenaires*/
+
+
+.partenaires {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px #B00F0F;
+}
+.partenairesImages {
+    height:100px;
+    width:auto;
+    margin: 30px 30px 50px 30px;
+}
+.partenairesNames {
+    margin: auto 50% auto 0px;
+    font-size: 2em;
+}
+
+
+                /*Se Cultiver*/
+
+.seCultiver{
+    margin-bottom: 100px;
+}
+.seCultiverTxt {
+    font-size: 15pt;
+}
+.seCultiverTitre {
+    margin: 50px 0px 50px 0px;
+    font-size: 2em;
+}
+.seCultiverImage {
+    float: left;
+    height: 300px;
+    margin: 50px 20px 20px 0px;
+    border: solid 4px #B00F0F;
+}
+
+
+                /*Demain le Printemps*/
+
+.ecoleTitre {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top:50px;
+    color: #B00F0F;
+}
+
+                /*Equipe pédagogique*/
+
+.presseMultimedia {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enseignants {
+    display: grid; 
+    grid-template-columns: 1fr 1fr ; 
+    grid-template-rows: 1fr 1fr 1fr ; 
+    gap: 0px 0px; 
+}
+
+.enseignant {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 15px 15px 20px;
+    padding:15px 0px 15px 20px;
+    background-color: #f3f1f3;
+    width: 200px;
+}
+.eleve {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width:700px;
+}
+.portraitsDanciens {
+    margin-left: auto;
+    margin-right: auto;
+}
+.photoStudent {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.eleveImageNom {
+    display: flex;
+    flex-direction: row;
+    border-bottom:black 2px solid;
+    width: 300px;
+}
+.CancelUpdate {
+    display: flex;
+    flex-direction: column;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left: 15px;
+}
+.photoEnseignant {
+    width: 150px;
+    height: auto;
+    border: #B00F0F solid 1px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.nomEleves {
+    margin-top:50%;
+    margin-bottom: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    text-align: center;
+}
+
+/*Boffice*/
+.supprimer {
+    font-size: 30px;
+    color: #B00F0F;
+}
+
+                /*Cours pédagogiques*/
+
+
+.contenuPedagogiqueTitre {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #B00F0F;
+    margin-left: 30%;
+}
+
+
+                /*Formations*/
+
+
+.formations {
+    border: #B00F0F solid 1px;
+    height: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin:20px 0px 0px 20px
+}
+.formationImg {
+    height: 70px;
+    width: 70px;
+    margin: 15px 15px -10px 15px;
+    overflow: hidden;
+}
+.formationTitreTxt {
+    color:#B00F0F;
+}
+.formationTxt {
+    color: black;
+}
+.AfficherEleveIndividuelPhoto {
+    width: 1000px;
+    height: auto;
+    margin: 50px 20px 20px 0px;
+    border: solid 1px #B00F0F;
+}
+.actualites {
+    border: solid 1px darkgrey;
+    margin-right: 10px;
+    background: #f8f8f8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.actualite {
+    display: flex;
+    flex-direction: row;
+    
+}
+.actualiteTxt {
+    display: block;
+}
+.imgActualites {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#mail {
+    font-family: Arial, Helvetica, sans-serif;
+}
+                /*Inscription Administrateur*/
+.inscriptionAdministrateurForm {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inscriptionAdministrateurFormItem {
+   margin-bottom: 50px; 
+}
+.inscriptionAdministrateurLabel {
+    margin-right: 10px;
+    text-align:right;
+}
+.iframeCarte {
+    border:#B00F0F solid 3px;
+    width:200px; 
+    height:150px;
+    margin-top: auto;
+    margin-bottom: auto;
+} 
+.mapLink {
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+    margin-left: 50px;
+}
